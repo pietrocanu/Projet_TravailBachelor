@@ -41,6 +41,7 @@ def analyse():
             
             filename = image.filename
             f = image.save(os.path.join(app.config["UPLOADED_PATH"], filename))
+			
     return render_template('index.html', filename = setsrc(filename))
 
 
