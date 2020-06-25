@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <title>Flask App</title>
 		{{ dropzone.load_css() }}
@@ -31,7 +32,7 @@
 			<div class="col-6">
 				<h5 class="text-center">Structure du document</h5>
 				<p>{{ filename }}</p>
-				 <img src="{{ filename }}" alt="Résultat">
+				 <img src="{{ filename }}" alt="Résultat" style="max-width: 600px; max-height: 1000px;">
 			</div>
 		</div>
     </body>
